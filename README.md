@@ -93,6 +93,8 @@ bash run.sh > CQS.txt
 
 DESCRIPTION: Modify the file path in run.sh. The families.msa.tsv file is derived from the output file generated in Step 4. This script merges duplicate reads from the aligned files into single-strand consensus sequences (SSCS), which are then combined into double-strand consensus sequences (DCS).
 
-##OVERVIEW
+## OVERVIEW  ##
+
+<img src="https://github.com/DanPu-Lab/AFUMIC/blob/master/AFUMIC/Overview.jpg" width="50%" height="50%">
 
 
