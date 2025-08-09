@@ -26,9 +26,11 @@ This pipeline requires the following dependencies:
 Sequences with the same UMI are grouped into the same family. Run make-families.sh with required input parameters:
 
 '''
+
 read_1.fastq  FASTQ1    FASTQ containing Read 1 of paired-end reads.
 
 read_2.fastq  FASTQ2    FASTQ containing Read 2 of paired-end reads.
+
 
 '''
 
@@ -47,6 +49,7 @@ DESCRIPTION: Among them, refdir is the generated barcode index folder, and barco
 UMI sequences that are identical or highly similar are clustered into a single cluster, with errors in the UMIs corrected. To run run.sh, the following parameters need to be modified:
 
 '''
+
 output_file     Sequence cluster files after alignment with the reference genome.
 
 names_to_barcodes     The ID of UMI. 
@@ -60,6 +63,7 @@ ab_txt     The order of UMI.
 ba_txt     The order of UMI.
 
 corrections     The sequence file after clustering via run.sh
+
 '''
 
 bash run.sh > correct.txt
@@ -77,9 +81,11 @@ python align-families.py families.corrected.tsv > families.msa.tsv
 Run CQS/run.sh required these parameters:
 
 '''
+
 -f file   	  Input the file after multiple sequence alignment.
 
 -anchor     The number of bases upstream and downstream of the midpoint of the core region. The default parameter is set to 15.
+
 
 '''
 
