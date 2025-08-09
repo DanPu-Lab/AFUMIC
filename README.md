@@ -27,9 +27,9 @@ Sequences with the same UMI are grouped into the same family. Run make-families.
 
 '''
 
-read_1.fastq  FASTQ1    FASTQ containing Read 1 of paired-end reads.
+read_1.fastq  FASTQ1,    FASTQ containing Read 1 of paired-end reads.
 
-read_2.fastq  FASTQ2    FASTQ containing Read 2 of paired-end reads.
+read_2.fastq  FASTQ2,    FASTQ containing Read 2 of paired-end reads.
 
 
 '''
@@ -50,19 +50,19 @@ UMI sequences that are identical or highly similar are clustered into a single c
 
 '''
 
-output_file     Sequence cluster files after alignment with the reference genome.
+output_file,     Sequence cluster files after alignment with the reference genome.
 
-names_to_barcodes     The ID of UMI. 
+names_to_barcodes,     The ID of UMI. 
 
-lost_barcodes     UMI sequences with a similarity less than the Hamming distance.
+lost_barcodes,     UMI sequences with a similarity less than the Hamming distance.
 
-barcodes_txt     UMI sequences with a similarity more than the Hamming distance.
+barcodes_txt,     UMI sequences with a similarity more than the Hamming distance.
 
-ab_txt     The order of UMI.
+ab_txt,     The order of UMI.
 
-ba_txt     The order of UMI.
+ba_txt,     The order of UMI.
 
-corrections     The sequence file after clustering via run.sh
+corrections,     The sequence file after clustering via run.sh
 
 '''
 
@@ -82,9 +82,9 @@ Run CQS/run.sh required these parameters:
 
 '''
 
--f file   	  Input the file after multiple sequence alignment.
+-f file,   	  Input the file after multiple sequence alignment.
 
--anchor     The number of bases upstream and downstream of the midpoint of the core region. The default parameter is set to 15.
+-anchor,     The number of bases upstream and downstream of the midpoint of the core region. The default parameter is set to 15.
 
 
 '''
